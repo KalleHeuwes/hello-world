@@ -37,7 +37,7 @@ function aktiviere(obj){
 function aktualisiereUhrzeit(){
     liesRaster();
     const eingabe = document.getElementById("eingabe").value;
-    console.log(eingabe);
+    /*console.log(eingabe);*/
     let today = new Date();
     let uhrzeit = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     let stunde = today.getHours();

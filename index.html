@@ -52,9 +52,12 @@
 <body onload="liesRaster()">
 <h1>Uhrzeit im Klartext</h1>
 <h4>Version 0.0.1</h4>
+<!--
+<label>Ostdeutsche Variante (Viertel)</label><input type="checkbox" id="chkVariante" value="1"><br/>
+-->
 <label>Testeingabe (Format HH:MM:SS, leer: aktuelle Uhrzeit)</label>
 <input id="eingabe">
-<input type="button" onclick="aktualisiereUhrzeit()" value="Aktualisieren"/>
+<input type="button" onclick="aktualisiereUhrzeit()" value="Aktualisieren"/><br/>
 <div id="raster" class="grid-container" style="width: 800px"></div>
 </body>
 </html>
