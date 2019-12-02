@@ -50,6 +50,7 @@ function aktualisiereUhrzeit(){
     console.log(uhrzeit);
     if(minute >  52 || minute <= 7){
         aktiviere(leuchtobjekt("UHR"));
+        if(minute >  52 ) stunde++;
         console.log("Uhr");
     }
     if(minute >  7 && minute <= 12){
