@@ -48,10 +48,14 @@ function aktualisiereUhrzeit(){
         uhrzeit = eingabe;
     }
     console.log(uhrzeit);
-    if(minute >  52 || minute <= 7){
+    if(minute >  57 || minute <= 2){
         aktiviere(leuchtobjekt("UHR"));
         if(minute >  52 ) stunde++;
         console.log("Uhr");
+    }
+    if(minute >  2 && minute <= 7){
+        aktiviere(leuchtobjekt("MINUTE5"));
+        aktiviere(leuchtobjekt("NACH"));
     }
     if(minute >  7 && minute <= 12){
         aktiviere(leuchtobjekt("MINUTE10"));
@@ -81,6 +85,11 @@ function aktualisiereUhrzeit(){
     }
     if(minute >  47 && minute <= 52){
         aktiviere(leuchtobjekt("MINUTE10"));
+        aktiviere(leuchtobjekt("VOR"));
+        stunde++;
+    }
+    if(minute >  52 && minute <= 57){
+        aktiviere(leuchtobjekt("MINUTE5"));
         aktiviere(leuchtobjekt("VOR"));
         stunde++;
     }
